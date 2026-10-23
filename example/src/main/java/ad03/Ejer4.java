@@ -48,7 +48,7 @@ public class Ejer4 {
 
             // Llamamos a la función almacenada de MySQL
             String llamada =
-                    "{? = call obtener_numero_matriculados(?,?)}";
+                    "{? = call obtener_numero_matriculados(?)}";
 
             try (CallableStatement cs =
                          con.prepareCall(llamada)) {
